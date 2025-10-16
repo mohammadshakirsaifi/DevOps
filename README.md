@@ -177,15 +177,16 @@ newgrp docker
 docker --version
 
 ```
-Additional Resources
+#### Additional Resources
 
-k3d documentation
-
-Kubernetes documentation
-
-Helm documentation
-
-Docker documentation
-
-Terraform documentation# Or, if WSL is already installed:
-dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+- **k3d documentation:** https://k3d.io/stable/
+- **Kubernetes documentation:** https://kubernetes.io/docs/home/
+- **Helm documentation:** https://helm.sh/docs/
+- **Docker documentation:** https://docs.docker.com/
+- **Terraform documentation:** https://developer.hashicorp.com/terraform/docs
+#### Tips
+- Restart your WSL shell or Windows after installing Docker or adding user groups.
+- Use multiple WSL distros to simulate different development environments or team roles.
+- Keep your Kubernetes cluster small but representative for quick iterations and testing.
+- Secure your secrets and images as early as possible to build good security habits.
+- 
