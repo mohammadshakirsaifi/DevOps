@@ -56,11 +56,12 @@ Open **PowerShell as Administrator** and run:
 
 ```powershell
 wsl --install
+```
 
 Install Ubuntu from Microsoft Store, or via command line:
-
+```powershell
 wsl --install -d ubuntu-22.04
-
+```
 
 (For multiple Ubuntu instances, see next section.)
 https://learn.microsoft.com/en-us/windows/wsl/install
@@ -70,20 +71,20 @@ B. Create Multiple WSL Ubuntu Instances (Optional)
 Create isolated distro copies for different roles or teams:
 
 Export your initialized Ubuntu distro (with user setup and essential packages):
-
+```powershell
 wsl --export Ubuntu ubuntu-base.tar
-
+```
 
 Import new distro instances:
-
+```powershell
 wsl --import UbuntuDev1 C:\wsl\UbuntuDev1 ubuntu-base.tar --version 2
 wsl --import UbuntuDev2 C:\wsl\UbuntuDev2 ubuntu-base.tar --version 2
-
+```
 
 List installed distros:
-
+```powershell
 wsl -l -v
-
+```
 
 More info:
 https://endjin.com/blog/creating-multiple-wsl-instances/
@@ -106,12 +107,12 @@ Enable “Use the WSL 2 based engine”
 
 Enable integration with your Ubuntu distros (Docker Desktop Settings → Resources → WSL Integration)
 
-4) Install Tools Inside WSL Ubuntu (e.g., UbuntuDev1)
+## 4) Install Tools Inside WSL Ubuntu (e.g., UbuntuDev1)
 
 Open WSL shell:
-
+```powershell
 wsl -d UbuntuDev1
-
+```
 
 Run these commands step-by-step:
 
